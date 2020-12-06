@@ -3,8 +3,7 @@
 #include <array> 
 #include <iostream> 
 #include <iterator> 
-#include <string>
-#include <cstddef> 
+#include <string> 
 
 using namespace std; 
 
@@ -15,14 +14,14 @@ bool my_compare_function (T i, T j) {
 
 template <class T, size_t size>
 void display(array<T, size> arr){
-  //range based for loop
-  for (auto i : arr) {
-      cout << i << "   ";
-  }
-  //for (auto &s : arr) {
-  //  cout << s << ' ';
-  //}
-  cout << "\n" << endl;
+	//range based for loop
+	for (auto i : arr) {
+		cout << i << "   ";
+	}
+	//for (auto &i : arr) {
+	//  cout << i << "  ";
+	//}
+	cout << "\n" << endl;
 }
 
 
