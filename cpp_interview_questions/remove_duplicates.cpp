@@ -57,7 +57,7 @@ int main()
 }
 
 
-/*
+/*---output---
 
 Original array is: 5 3 6 6 3 
 Method-1 New array is: 5 3 6 
