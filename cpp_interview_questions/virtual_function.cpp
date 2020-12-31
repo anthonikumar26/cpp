@@ -188,20 +188,20 @@ class Derived2: public Base
 
 int main() 
 { 
-	Derived1 d1;
-	Derived2 d2;
-	
-	Base b=d1;
-	b.func();
-	
-	Base &b1=d1;
-	b1.func();
-	
-	Base &b2=d2;
-	b2.func();
-	
-	return 0; 
-} 
+    Derived1 d1;
+    Derived2 d2;
+    
+    Base b=d1;
+    b.func();
+    
+    Base &b1=d1;
+    b1.func();
+    
+    Base &b2=d2;
+    b2.func();
+    
+    return 0; 
+}
 
 
 
