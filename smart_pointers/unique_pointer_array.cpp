@@ -5,21 +5,21 @@ private:
     T * ptr = nullptr;
 
 public:
-    my_unique_ptr() : ptr(nullptr){}
+    MyUniquePtrArray() : ptr(nullptr){}
 
-    my_unique_ptr(T * ptr) : ptr(ptr){}
+    MyUniquePtrArray(T * ptr) : ptr(ptr){}
 
-    my_unique_ptr(const my_unique_ptr & obj) = delete; 
-    my_unique_ptr& operator=(const my_unique_ptr & obj) = delete;
+    MyUniquePtrArray(const MyUniquePtrArray & obj) = delete; 
+    MyUniquePtrArray& operator=(const MyUniquePtrArray & obj) = delete;
 
-    my_unique_ptr(my_unique_ptr && dyingObj)
+    MyUniquePtrArray(MyUniquePtrArray && dyingObj)
     {
         cleanup(); 
         this->ptr = dyingObj.ptr;
         dyingObj.ptr = nullptr;
     }
 
-    void operator=(my_unique_ptr && dyingObj)
+    void operator=(MyUniquePtrArray && dyingObj)
     {
         cleanup();
         this->ptr = dyingObj.ptr;
@@ -41,7 +41,7 @@ public:
         return this->ptr[index];
     }
 
-    ~my_unique_ptr()
+    ~MyUniquePtrArray()
     {
         cleanup();
     }
