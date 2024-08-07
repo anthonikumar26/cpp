@@ -25,14 +25,14 @@ class B{
             cout << "B constructor" << endl;
         } 
         ~B(){
-             delete a;
-             cout << "B destructor" << endl;
+            delete a;
+            cout << "B destructor" << endl;
         }
         void display()
         {
-			a->print();
-			cout << "B display" << endl;
-		}
+	    a->print();
+	    cout << "B display" << endl;
+	}
 };
 
 int main() {
