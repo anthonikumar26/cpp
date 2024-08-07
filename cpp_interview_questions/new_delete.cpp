@@ -30,9 +30,9 @@ class B{
         }
         void display()
         {
-	    a->print();
-	    cout << "B display" << endl;
-	}
+            a->print();
+            cout << "B display" << endl;
+        }
 };
 
 int main() {
