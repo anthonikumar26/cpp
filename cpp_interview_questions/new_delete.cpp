@@ -3,8 +3,9 @@
 #include <iostream>
 
 using namespace std;
-class A{
-    public:
+class A
+{
+public:
     A(){
         cout << "A constructor" << endl;
     } 
@@ -16,23 +17,23 @@ class A{
     }
 };
 
-class B{
-    
-    public:
-        A *a;
-        B(){
-            a = new A();
-            cout << "B constructor" << endl;
-        } 
-        ~B(){
-            delete a;
-            cout << "B destructor" << endl;
-        }
-        void display()
-        {
-            a->print();
-            cout << "B display" << endl;
-        }
+class B
+{    
+public:
+    A *a;
+    B(){
+        a = new A();
+        cout << "B constructor" << endl;
+    } 
+    ~B(){
+        delete a;
+        cout << "B destructor" << endl;
+    }
+    void display()
+    {
+        a->print();
+        cout << "B display" << endl;
+    }
 };
 
 int main() {
